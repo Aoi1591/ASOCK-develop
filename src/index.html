@@ -6,6 +6,7 @@
   <title>モーダル</title>
   <!-- 外部cssファイルの読み込み -->
   <link rel="stylesheet" href="css/AddClassroom.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
@@ -16,7 +17,7 @@
 <div id="modal" class="modal">
   <div class="modal-content">
     <!-- モーダルを閉じるボタン -->
-    <span id="closeModalBtn" class="close">&times;</span>
+    <!-- 一旦ログイン画面は閉じるボタンなしの方向で！ <span id="closeModalBtn" class="close">&times;</span>-->
     <!-- PHPファイルから取得したHTMLを挿入する場所 -->
     <div id="modalBody"></div>
   </div>
@@ -29,14 +30,14 @@
   //モーダルを開くボタンの要素を取得
   const openBtn = document.getElementById('openModalBtn');
   //モーダルを閉じるボタンの要素を取得
-  const closeBtn = document.getElementById('closeModalBtn');
+  //const closeBtn = document.getElementById('closeModalBtn');
   //モーダル内に内容を挿入する領域を取得
   const modalBody = document.getElementById('modalBody');
   
   //モーダルを開くボタンがクリックされた時
   openBtn.onclick = () => {
-    //PHP空データを取得してモーダルに挿入
-    fetch('php/AddClassroom.php')
+    //HTMLデータを取得してモーダルに挿入
+    fetch('php/html/login.html')
       .then(res => res.text()) //レスポンスをテキストとして受け取る
       .then(data => {
         modalBody.innerHTML = data; //モーダル内に取得データを挿入

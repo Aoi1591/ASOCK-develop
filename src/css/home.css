@@ -1,58 +1,120 @@
 .floorNumArea {
-  /*アンダーライン*/
+  /* アンダーライン */
   border-bottom: solid 2px rgba(0, 0, 0, 1);
 
   /* 下とのスペース */
   margin-bottom: 16px;
 }
+
 .floorNum {
   font-size: 75px;
-  /*横幅*/
+
+  /* 左の壁とのスペースを空ける */
   margin-left: 32px;
 }
+
+.classRoomNumArea2 {
+  /* 教室を横並びにする */
+  display: flex;
+}
+
 .classRoomSafe {
   font-size: 60px;
   background-color: #beffac;
 
-  /* 縦幅 */
+  /* 横幅 */
   width: 45%;
 
-  /* 横幅 */
+  /* 左右および下にスペースを空ける */
   margin-bottom: 16px;
   margin-left: 16px;
   margin-right: 16px;
 
-  /* ボタンのサイズ */
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-
-  /* ボタンの角 */
+  /* 教室エリアの角 */
   border-radius: 50px;
   border-width: 1px;
   border-style: solid;
+
+  /* 教室名を中心に */
+  text-align: center;
 }
+
 .classRoomDanger {
   font-size: 60px;
   background-color: #ffa8a8;
 
-  /* 縦幅 */
+  /* 横幅 */
   width: 45%;
 
-  /* 横幅 */
+  /* 左右および下にスペースを空ける */
   margin-bottom: 16px;
   margin-left: 16px;
   margin-right: 16px;
 
-  /* ボタンのサイズ */
+  /* 教室エリアの角 */
+  border-radius: 50px;
+  border-width: 1px;
+  border-style: solid;
+
+  /* 教室名を中心に */
+  text-align: center;
+}
+
+.classRoomName {
+  /* 教室エリアのサイズ */
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 100px;
   padding-bottom: 100px;
+}
 
-  /* ボタンの角 */
-  border-radius: 50px;
-  border-width: 1px;
-  border-style: solid;
+/*以下はAdminHomeのみにかかるcss*/
+.adminClassRoom {
+  /* 上下のサイズ */
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.udButton {
+  /* 編集ボタンと削除ボタンを横並びに */
+  display: flex;
+
+  /* 編集ボタンと削除ボタンを教室エリアの下に */
+  align-items: flex-end;
+}
+
+.classUpdate {
+  background-color: white;
+  font-size: 40px;
+  color: lime;
+
+  /* 横幅 */
+  width: 220px;
+
+  /* 編集ボタンのサイズ */
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  /* 編集ボタンの角を左下だけ丸に */
+  border-radius: 0 0 0 50px;
+}
+
+.classDelete {
+  background-color: white;
+  font-size: 40px;
+  color: red;
+
+  /* 横幅 */
+  width: 220px;
+
+  /* 削除ボタンのサイズ */
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  /* 削除ボタンの角を右下だけ丸に */
+  border-radius: 0 0 50px 0;
 }

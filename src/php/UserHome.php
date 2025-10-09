@@ -15,6 +15,7 @@ for ($i = 0; $i < 7 ;$i++) {
 </div>
 
 <div class="classRoomNumArea">
+    <div class="classRoomNumArea2">
     <?php
     //教室数表示のためのループ
     for ($j = 0; $j < 9; $j++) {
@@ -22,14 +23,28 @@ for ($i = 0; $i < 7 ;$i++) {
         //↓ここで鍵が開いているかを判定する予定
         if($j % 2 == 0){
     ?>
-    <button id="room-<?php echo $classRoomNum;?>" class="classRoomSafe"><?php echo $classRoomNum; ?>教室</button>
+
+    <div id="room-<?php echo $classRoomNum;?>"class="classRoomSafe">
+        <div class="classRoomName">
+            <?php echo $classRoomNum; ?>教室
+        </div>
+    </div>
     <?php }else{ ?>
-    <button class="classRoomDanger"><?php echo $classRoomNum; ?>教室</button>
-    <br />
+    <div class="classRoomDanger">
+        <div class="classRoomName">
+            <?php echo $classRoomNum; ?>教室
+        </div>
+    </div>
     <?php 
+    }
+    if($j % 2 == 1){
+    ?>
+    </div><div class="classRoomNumArea2">
+    <?php
     }
     }
     ?>
+    </div>
 </div>
 
 <?php
