@@ -53,7 +53,7 @@ for ($i = 0; $i < 7 ;$i++) {
 </div>
 <script>
     //後でここにGASのWebアプリURLを入れる
-    const GAS_URL = "";
+    const GAS_URL = "https://discordapp.com/channels/@me/1151361053159071755/1426017822592729111";
 
     //スプレッドシートからデータを取得
     async function loadData(){
