@@ -34,6 +34,13 @@ for ($i = 0; $i < 7 ;$i++) {
         <div class="classRoomName">
             <?php echo $classRoomNum; ?>教室
         </div>
+        <!-- ★テスト用の教室 -->
+        <div id="room-test" class="classRoomSafe">
+           <div class="classRoomName">
+             test教室
+           </div>
+        </div>
+
     </div>
     <?php 
     }
