@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<link rel="stylesheet" href="../css/Home.css">
+<link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
 <div class="area">
